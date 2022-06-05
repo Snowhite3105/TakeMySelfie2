@@ -67,12 +67,15 @@ Webcam.set({
 function take_selfie()
 {
     Webcam.snap(function(data_uri) {
-        if(img_id==="selfie_image1"){
+        if(img_id=="selfie_image1"){
                      document.getElementById("result1").innerHTML = '<img id="selfie_image1" src="'+data_uri+'"/>';
         } 
+        if(img_id==="selfie_image2"){
          document.getElementById("result2").innerHTML = '<img id="selfie_image2" src="'+data_uri+'"/>';
-
+        }
+         if(img_id==="selfie_image3"){
          document.getElementById("result3").innerHTML = '<img id="selfie_image3" src="'+data_uri+'"/>';
+         }
     });
 }
 
